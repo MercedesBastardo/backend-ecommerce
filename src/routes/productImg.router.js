@@ -5,6 +5,7 @@ const verifyJWT = require('../utils/verifyJWT')
 
 const productImgRouter = express.Router();
 
+
 productImgRouter.route('/')
     .get(verifyJWT, getAll)
     .post(upload.single('image'), verifyJWT, create);
