@@ -8,7 +8,6 @@ const ProductImg = sequelize.define('productImg', {
     },
     publicId: {
         type: DataTypes.STRING,
-        allowNull: false
     },
 }, {
     timestamps: false
